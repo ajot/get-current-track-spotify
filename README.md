@@ -1,6 +1,7 @@
-Here's the Apple script that will get the track information from Spotify for the current track. Once you have this, you just need a way to print the result somewhere. I use the Text Expander app on the Mac to insert text snippets with simple keyboard shortcuts.
+# Get Current Track from Spotify using AppleScript
+Here's the Apple script that will get the track information from Spotify for the current track. Once you have this, you just need a way to print the result somewhere. I use the [Text Expander](https://textexpander.com) app on the Mac to insert text snippets with simple keyboard shortcuts.
 
-```
+```applescript
 if application "Spotify" is running then
     tell application "Spotify"
         if (get player state) is playing then
